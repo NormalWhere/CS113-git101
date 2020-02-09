@@ -1,0 +1,22 @@
+Functions and program structure
+
+separate compilation (การคอมไพล์แยกส่วน)
+    gcc -c main.c สร้าง main.o
+    gcc -c func.c สร้าง func.o
+    gcc main.o func.o -o main.exe รวม main และ func เข้าด้วยกัน
+
+static library
+    gcc -c func.c
+    ar cr libfunc.a func.o
+
+shared dynamic library
+    gcc -shared -o libfunc.dll -Wl,--out-implib,;ibfunc.dll.a*.o
+
+shared library c จาก python
+    from ctypes import cdll
+    c_lib = cdll.LoadLibrary("libfunc.dll")
+    c_lib.c_function(123)
+
+random number generate(การสุ่มตัวเลข)
+    rand() เป็น function standard library ใช้สร้างเลขสุ่ม สร้างเลขตั้งแต่ 0 ถึง RAND_MAX ซึ่งถูกกำหนดไว้ใน<stdlib.h>
+    
