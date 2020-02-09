@@ -1,0 +1,9 @@
+statements and blocks 
+
+if-else, loop, switch case
+ต้องกำหนด block การทำงานโดยการใส่{} คลุมคำสั่งที่ต้องการให้ block นั้นๆทำงาน
+
+loop do-while จะทำ expreesion ก่อน 1 ครั้งแล้วจึงมาตรวจสอบเงื่อนไขในครั้งถัดไปของใน loop
+
+break ใช้หยุดการทำลูป
+continue จะทำ loop ใหม่ทันที โดยข้ามกรณีเงื่อนไขหลังจากนี้ไป
