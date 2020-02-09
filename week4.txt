@@ -1,0 +1,18 @@
+- การนิยามฟังก์ชั่น
+    รูปแบบ
+    return-value-type function-name( parameter-list )
+        {
+            ตัวแปรที่ประกาศ
+            เงื่อนไข 1
+            เงื่อนไข 2
+            .
+            .
+
+        }
+
+- Function call by value จะส่งค่าไปที่ฟังก์ชั่นแบบ pass by value (การ copy ค่าไปทำงานในฟังก์ชั่น)
+- standard library เป็นการเรียกใช้ printf, scanf, getchar เป็นต้น โดย #include <stdio.h>2
+- math library เป็นการเรียกใช้ sqrt, exp, log เป้นต้น โดย #include <math.h>
+
+- local variables จะเป็นตัวแปรที่ถูกกำหนดไว้ใช้ในฟังก์ชั่น
+- global variables เป็นตัวแปรที่ถูกประกาศในนอกฟังก์ชั่นสำหรับใช้งานทั้งโปรแกรม
