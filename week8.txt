@@ -1,0 +1,13 @@
+linked list เป็นโครงสร้างข้อมูลที่ออกแบบมาเพื่อใช้เก็บข้อมูล โดยข้อมูลแต่ละตัวจะเชื่อมต่อกันเป็นสายๆ
+structure เป็นการกำหนดรูปแบบการเก็บข้อมูลหลายตัวแบบต่างประเภทกัน
+
+การใช้ pointer เข้าถึง structure
+    struct student std, *p_std; 
+    p_std = &std; 
+    printf("%s\n", (*p_std).name); 
+    (*p_std).age = 21; 
+
+typedef สามารถใช้กำหนดประเภทข้อมูลเพิ่มเติมได้
+singly linked list เป็นการที่แต่ละโหนดอยู่ติดกันเชื่อต่อกันผ่านลิงก์ ลิงก์เดียว
+doubly linked list คือ node แต่ละ noed เชื่อต่อกันด้วย 2 ลิงก์
+circular linked list คือ list ที่ node สุดท้าย เชื่อต่อวนกลับไปยัง node แรก
