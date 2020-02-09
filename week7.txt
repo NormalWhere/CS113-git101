@@ -1,0 +1,20 @@
+pointer and dynamic memory allocation
+ผู้เขียนโปรแกรม สามารถเข้าถึงหน่วยคสวามจำได้โดย pointer เพื่อเข้าถึง address ของข้อมูล
+
+pointer operators
+    & เป็น address operators เป็น unary operator ต้องการเพียง 1 operand
+    * เป็น dereferencing operator หรือ indirection operators
+
+การใช้ pointer อ้างอิงฟังก์ชั่น
+    สามารถใช้ตัวแปร pointer อ้างไปยังของฟังก์ชั่นที่ต้องการได้ ฟังก์ชั่นที่ถูกเรียกจะถูกโหลดเข้ามาในหน่วย
+
+segmentation fault เกิดเมื่อเกิดการไม่ได้จองพื้นที่หน่วยตวามจำ
+    ตัวอย่างเช่น
+
+        #include <stdio.h>
+        int main()
+        {   int data[] = {1, 2, 3, 4, 5};
+            int i;
+            for (i=0; i < 69; i++)                            << ลูปวนค่าเกินกว่าที่จองไว้ใน memory
+            printf("Data element #%d is %d\n", i, data[i]);
+        }
