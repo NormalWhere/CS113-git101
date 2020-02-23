@@ -1,0 +1,13 @@
+git checkout <brance-name> คือ เพื่อเปลี่ยน branch เป็น branch mี่ต้องการ
+git clone  git-url คือ เพื่อน git repository ที่ที่เคยpushไว้ในgithub มาทำงานต่อ
+git log --all --decorate --oneline --graph คือ เพื่อดู Checkpoint ทั้งหมด
+git branch คือ เพื่อตรวจสอบว่ามีbranchใดบ้าง
+git branch <ชื่อbranchที่ต้องการสร้าง> คือ เพื่อสร้างbranch
+git push origin master คือ push master ขึ้น github
+git pull คือ ดึงการเปลี่ยนแปลงจาก branch
+git status คือ ตรวจสอบสถานะgit 
+ls -l คือ แสดงรายแฟ้มในdirectory นั้นๆ
+git merge <ชื่อbranch> คือ คือการนำ branch ไปรวมกับ branch master ต้องเปลี่ยน branch เป็น masterก่อน
+git push คือ อัพเดทไฟล์ในgitให้เป็นสถานะล่าสุด
+การmergeแบบมีconflict คือ การปรับแก้ไขข้อมูลในไฟล์เดิม บรรทัดเดิม ที่อยู่ต่าง Branch กันเมื่อ merge แล้ว git ตัดสินใจไม่ได้ว่าจะใช้ข้อมูลจาก branch ใด
+git checkout -b <ชื่อbranch> คือการสร้าง branch และ สลับไปยังbranch ที่สร้างทันที
